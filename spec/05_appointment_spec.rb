@@ -6,7 +6,7 @@ describe "Appointment" do
     it "knows about all appointments that have been created" do
       doctor_who = Doctor.new("The Doctor")
       hevydevy = Patient.new("Devin Townsend")
-      doctor_who.new_appointment(hevydevy, "Friday, January 32nd")
+      doctor_who.new_appointment("Friday, January 32nd", hevydevy)
       appointment = doctor_who.new_appointment(hevydevy, "Caturday, January Purrty2nd")
       doctor_who.new_appointment(hevydevy, "Satunday, January 34nd")
 
